@@ -37,7 +37,7 @@ print(f"{product_name[:70]}... currently costs ${price_dollars}{price_cents}")
 
 price = int(float(price_dollars))
 
-if float(price) <= 100:
+if price <= 100:
     with smtplib.SMTP(gmail_smtp) as connection:
         connection.starttls()
         # tls means transport layer security
